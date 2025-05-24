@@ -14,5 +14,4 @@ Je suis en train de suivre le cours React de [Learn React](https://scrimba.com/l
 ## Liens utiles
 
 - [Cours React Scrimba](https://scrimba.com/learn-react-c0e)
-- [Ma playlist YouTube complète]()
-- [Code source GitHub]()
+- [Ma playlist YouTube complète](https://www.youtube.com/playlist?list=PLCfWsbfoICpvmOSiON2JNlqRpqUNVIFK-)
