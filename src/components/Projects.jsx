@@ -8,7 +8,7 @@ export default function Projects() {
           <Link to="/react-facts">React Facts - Project</Link>
         </li>
         <li className="project-link">
-          <Link to="/test">Test</Link>
+          <Link to="/travel-journal">Travel Journal - Projects</Link>
         </li>
       </nav>
     </section>

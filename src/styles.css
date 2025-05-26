@@ -12,7 +12,7 @@
         @apply box-border m-0 p-0;
     }
     body {
-        @apply bg-[#27292c] text-white font-mono; 
+        @apply  text-white font-mono; 
     }
 }
 @layer components{
@@ -28,5 +28,44 @@
     .project-link{
         @apply py-1 px-2 bg-amber-500 rounded text-black font-bold;
     }
+    .travel-card{
+        @apply flex w-[90%] min-h-[280px] mx-auto mt-5 text-[#2B283A];
+    }
+    .travel-img-container {
+        @apply w-[50%]  flex-center;
+        img{
+            @apply w-[80%] h-full rounded-md object-cover;
+        }
+    }
+    .travel-content{
+        @apply  mt-6;
+
+        .travel-content-header{
+        @apply flex items-center gap-x-1 mb-3;
+
+            img{
+                @apply size-[15px] object-contain;
+            }
+            span{
+                @apply font-Inter font-normal tracking-wider ;
+            }
+            a{
+                @apply  underline ml-3.5 text-[#918E9B] font-Inter font-normal;
+            }
+        } 
+        h1{
+            @apply font-Inter font-bold text-3xl pb-8;
+        }
+        p:first-of-type{
+            @apply font-bold font-Inter mb-2;
+        }
+        p:last-of-type{
+            @apply font-Inter text-lg;
+        }
+    }
     
+    
+}
+@utility flex-center{
+    @apply flex justify-center items-center;
 }

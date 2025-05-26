@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 import Projects from "./Projects";
 import ReactFacts from "../Projects/ReactFacts-Project/Index";
-import Test from "../Projects/test/Test";
+import TravelJournal from "../Projects/TravelJournal-Project/index";
 
 export default function Layout() {
   return (
@@ -10,7 +10,7 @@ export default function Layout() {
       <Routes>
         <Route path="/" element={<Projects />} />
         <Route path="/react-facts" element={<ReactFacts />} />
-        <Route path="/test" element={<Test />} />
+        <Route path="/travel-journal" element={<TravelJournal />} />
       </Routes>
     </BrowserRouter>
   );
