@@ -1,11 +1,26 @@
 @import "tailwindcss";
 
+
 @layer base{
+    *{
+        @apply box-border m-0 p-0;
+    }
     body {
-        @apply p-2.5 bg-[#27292c] text-white font-mono; 
+        @apply bg-[#27292c] text-white font-mono; 
     }
 
     h1 {
         @apply mt-2.5 text-3xl font-bold;
+    }
+}
+@layer components{
+    .header{
+        @apply flex justify-between items-center py-2.5 border-b-3 border-black;
+    }
+    .nav-menu{
+        @apply flex items-center gap-x-2 text-xl font-bold;
+    }
+    .logo{
+        @apply size-[55px];
     }
 }
