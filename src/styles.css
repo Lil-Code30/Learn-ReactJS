@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @import "tailwindcss";
 
+@theme{
+
+    --font-Inter: "Inter", sans-serif;
+}
 
 @layer base{
     *{
@@ -8,14 +14,10 @@
     body {
         @apply bg-[#27292c] text-white font-mono; 
     }
-
-    h1 {
-        @apply mt-2.5 text-3xl font-bold;
-    }
 }
 @layer components{
     .header{
-        @apply flex justify-between items-center py-2.5 border-b-3 border-black;
+        @apply flex justify-between items-center px-2 py-2.5 shadow-2xl mb-5;
     }
     .nav-menu{
         @apply flex items-center gap-x-2 text-xl font-bold;
@@ -23,4 +25,8 @@
     .logo{
         @apply size-[55px];
     }
+    .project-link{
+        @apply py-1 px-2 bg-amber-500 rounded text-black font-bold;
+    }
+    
 }

@@ -34,13 +34,7 @@ export default function Header() {
   return (
     <header className="header">
       <img src="/react-logo.png" className="logo" alt="React logo" />
-      <nav>
-        <ul className="nav-menu">
-          <li>Pricing</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
+      <h1>Learn React</h1>
     </header>
   );
 }
