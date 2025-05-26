@@ -1,2 +1,11 @@
 @import "tailwindcss";
 
+@layer base{
+    body {
+        @apply p-2.5 bg-[#27292c] text-white font-mono; 
+    }
+
+    h1 {
+        @apply mt-2.5 text-3xl font-bold;
+    }
+}
