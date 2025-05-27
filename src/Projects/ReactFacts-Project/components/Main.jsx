@@ -8,8 +8,8 @@
 
 export default function Main() {
   return (
-    <main className="pt-10 pl-10 relative">
-      <h1 className="font-Inter text-[40px] font-bold">
+    <main className="pt-10 pl-10 relative bg-[#2B283A] h-screen -z-2">
+      <h1 className="font-Inter text-[40px] font-bold ">
         Fun facts about React
       </h1>
       <ul className="max-w-[400px] list-disc mt-5 pl-8 text-[16px] font-normal font-Inter marker:text-[#61DAFB] marker:text-xl ">

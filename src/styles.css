@@ -29,12 +29,12 @@
         @apply py-1 px-2 bg-amber-500 rounded text-black font-bold;
     }
     .travel-card{
-        @apply flex w-[90%] min-h-[280px] mx-auto mt-5 text-[#2B283A];
+        @apply flex w-[90%]  gap-x-2 min-h-[280px] mx-auto mt-5 text-[#2B283A];
     }
     .travel-img-container {
-        @apply w-[50%]  flex-center;
+        @apply max-w-[200px]   flex-center;
         img{
-            @apply w-[80%] h-full rounded-md object-cover;
+            @apply w-full  h-full rounded-md object-cover;
         }
     }
     .travel-content{
