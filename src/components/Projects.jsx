@@ -10,6 +10,9 @@ export default function Projects() {
         <li className="project-link">
           <Link to="/travel-journal">Travel Journal - Projects</Link>
         </li>
+        <li className="project-link">
+          <Link to="/chef-claude">Chef Claude - Project</Link>
+        </li>
       </nav>
     </section>
   );
