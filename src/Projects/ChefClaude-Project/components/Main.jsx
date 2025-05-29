@@ -7,10 +7,12 @@ import { getRecipeFromMistral } from "../ai";
 
 export default function Main() {
   const [ingredients, setIngredients] = useState([]);
-  const [recipeShown, setRecipeShown] = useState(false);
 
-  function toggleRecipeShown() {
-    setRecipeShown((prevShown) => !prevShown);
+  const [recipe, setRecipe] = useState("");
+
+  async function getRecipe() {
+    const recipeMarkdown = await getRecipeFromMistral(ingredients);
+    setRecipe(recipeMarkdown);
   }
 
   const addIngredient = (formData) => {
@@ -52,17 +54,8 @@ export default function Main() {
       </form>
       {ingredients.length > 0 && (
         <>
-          <IngredientsList
-            getRecipeFromMistral={getRecipeFromMistral}
-            handleRecipe={toggleRecipeShown}
-            ingredients={ingredients}
-          />
-          {recipeShown && (
-            <ClaudeRecipe
-              getRecipeFromMistral={getRecipeFromMistral}
-              ingredients={ingredients}
-            />
-          )}
+          <IngredientsList getRecipe={getRecipe} ingredients={ingredients} />
+          {recipe && <ClaudeRecipe recipe={recipe} />}
         </>
       )}
     </main>

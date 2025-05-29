@@ -1,4 +1,4 @@
-export default function IngredientsList({ ingredients, handleRecipe }) {
+export default function IngredientsList({ ingredients, getRecipe }) {
   const ingredientsList = ingredients.map((item) => {
     return (
       <li
@@ -9,10 +9,6 @@ export default function IngredientsList({ ingredients, handleRecipe }) {
       </li>
     );
   });
-
-  const displayRecipe = () => {
-    handleRecipe();
-  };
 
   return (
     <section className="w-2/3 mx-auto">
@@ -33,7 +29,7 @@ export default function IngredientsList({ ingredients, handleRecipe }) {
             </p>
           </div>
           <button
-            onClick={displayRecipe}
+            onClick={getRecipe}
             className="bg-[#D17557] text-white rounded-[6px] w-auto text-center h-[38px] px-[17px] py-[9px] shadow-sm"
           >
             Get a recipe
