@@ -13,6 +13,9 @@ export default function Projects() {
         <li className="project-link">
           <Link to="/chef-claude">Chef Claude - Project</Link>
         </li>
+        <li className="project-link">
+          <Link to="/meme-generator">Meme Generator - Project</Link>
+        </li>
       </nav>
     </section>
   );
