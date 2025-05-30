@@ -15,3 +15,25 @@ Je suis en train de suivre le cours React de [Learn React](https://scrimba.com/l
 
 - [Cours React Scrimba](https://scrimba.com/learn-react-c0e)
 - [Ma playlist YouTube complète](https://www.youtube.com/playlist?list=PLCfWsbfoICpvmOSiON2JNlqRpqUNVIFK-)
+
+## Projets
+
+<div align="center">
+<p><em> 1. React Facts - Project</em></p>
+  <img src="public/output/react-fact-img.png" alt="Aperçu du projet" width="80%">
+</div> <br><br>
+
+<div align="center">
+<p><em> 2. Travel Journal - Project </em></p>
+  <img src="public/output/travel-journal.png" alt="Aperçu du projet" width="80%">
+</div> <br><br>
+
+<div align="center">
+<p><em> 3. Chef Claude - Project </em></p>
+  <img src="public/output/chef-claude-img.png" alt="Aperçu du projet" width="80%">
+</div><br><br>
+
+<div align="center">
+<p><em> 4. Meme Generator </em></p>
+  <img src="public/output/meme-generator-img.png" alt="Aperçu du projet" width="80%">
+</div>
